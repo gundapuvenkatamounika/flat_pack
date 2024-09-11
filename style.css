@@ -1,0 +1,360 @@
+#website {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    border: 2px black solid;
+
+    #navebar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 700px;
+        padding: 20px 0px;
+
+        #nav_menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            #nav_text {
+                color: gray;
+                font-size: 15px;
+            }
+
+            #icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                #icon {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+
+    #loginpage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 110px 300px;
+        background: linear-gradient(rgba(255, 255, 255, 0.053), rgba(173, 230, 220, 0.201)), url("data:image/jpeg;base64,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");
+        #heading {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #subheading {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        #login {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 700px;
+            border: 2px black solid;
+            padding: 10px 20px;
+            background-color: black;
+
+            #text {
+                border-radius: 5px;
+                padding: 10px 30px;
+                font-size: 16px;
+                border: 1px red solid;
+            }
+
+            #submit {
+                border: 2px black solid;
+                border-radius: 5px;
+                background-color: rgba(0, 213, 255, 0.915);
+                color: white;
+                padding: 10px 30px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+        }
+
+        #note {
+            gap: 700px;
+            font-size: 15px;
+            color: white;
+        }
+    }
+
+    #site {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 2px black solid;
+        background-color: rgba(240, 248, 255, 0.889);
+        padding: 20px 200px;
+        #site_1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            #img{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 3px skyblue solid;
+
+                img {
+                    padding: 20px;
+                }
+
+            }
+
+            #site_2{
+                font-size: 20px;
+                width: 60%;
+            }
+        }
+    }
+
+    #page {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 200px;
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 100px 40px;
+            gap: 15px;
+
+            #content1 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #content2 {
+                font-size: 25px;
+            }
+
+            #content3 {
+                font-size: 20px;
+                color: gray;
+            }
+        }
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        #service_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            #service1 {
+                font-size: 30px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.592)
+            }
+
+            #service2 {
+                font-size: 20px;
+                color: gray;
+            }
+        }
+
+        #logos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+        }
+    }
+
+    #client {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 300px;
+        gap: 30px;
+        background-color: rgba(215, 248, 250, 0.514);
+
+        #clientsay {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            #client1 {
+                font-size: 30px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.564);
+            }
+
+            #client2 {
+                font-size: 20px;
+                color: gray;
+            }
+        }
+
+        #rating {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+
+            #total {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                #pic{
+                    border: 20px black;
+                    background-color: rgba(128, 128, 128, 0.286);
+                    img{
+                        padding: 20px;
+                        border-radius: 60px;
+                    }
+                }
+
+                #mix {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
+                    background-color: white;
+                    padding: 27px 20px;
+                    #sent {
+                        color: gray;
+                        font-size: 15px;
+                        align-items: flex-start;
+                        text-align: left;
+                        width: 400px;
+                    }
+                    #all {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        #third {
+                            color: rgb(135, 235, 233);
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #subscribe_now {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 200px;
+
+        #subscribe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 100px 40px;
+            gap: 15px;
+
+            #text1 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #text2 {
+                font-size: 20px;
+                color: gray;
+            }
+
+            #text3 {
+                background-color: rgba(0, 213, 255, 0.915);
+                color: white;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 19px;
+                padding: 10px 30px;
+            }
+        }
+    }
+
+    #last {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 389px;
+        gap: 15px;
+        background-color: rgba(135, 207, 235, 0.301);
+
+        #last0 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            #last1 {
+                font-size: 15px;
+                color: gray;
+            }
+
+            #last10 {
+                font-size: 17px;
+                color: orangered;
+            }
+        }
+
+        #last2 {
+            font-size: 15px;
+            color: gray;
+        }
+        #last3{
+            display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        #x{
+            height: 20px;
+            width: 20px;
+        }
+        #like{
+            height: 30px;
+        }
+    }
+
+}
+}
